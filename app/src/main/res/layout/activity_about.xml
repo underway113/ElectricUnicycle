@@ -9,6 +9,7 @@
         android:layout_width="155dp"
         android:layout_height="155dp"
         app:cardCornerRadius="250dp"
+        android:elevation="4dp"
         app:cardBackgroundColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +69,60 @@
         android:layout_marginTop="4dp"
         android:layout_marginHorizontal="18dp"/>
 
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardGithub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailAuthor"
+        app:layout_constraintBottom_toTopOf="@+id/tvDisclaimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardLinkedin">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/github_ic"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLinkedin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailAuthor"
+        app:layout_constraintBottom_toTopOf="@+id/tvDisclaimer"
+        app:layout_constraintStart_toEndOf="@+id/cardGithub"
+        app:layout_constraintEnd_toStartOf="@id/cardTokopedia">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/linkedin_ic"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTokopedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailAuthor"
+        app:layout_constraintBottom_toTopOf="@+id/tvDisclaimer"
+        app:layout_constraintStart_toEndOf="@+id/cardLinkedin"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tokopedia_ic"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"/>
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/tvDisclaimer"

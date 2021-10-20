@@ -21,10 +21,41 @@ class AboutActivity : AppCompatActivity() {
             clickSource()
         }
 
+        binding.cardGithub.setOnClickListener {
+            clickGithub()
+        }
+        binding.cardLinkedin.setOnClickListener {
+            clickLinkedin()
+        }
+        binding.cardTokopedia.setOnClickListener {
+            clickTokopedia()
+        }
+
     }
 
     private fun clickSource() {
         val url = applicationContext.getString(R.string.about_source_link)
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    private fun clickGithub() {
+        val url = applicationContext.getString(R.string.about_github_link)
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    private fun clickLinkedin() {
+        val url = applicationContext.getString(R.string.about_linkedin_link)
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    private fun clickTokopedia() {
+        val url = applicationContext.getString(R.string.about_tokopedia_link)
         val intent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse(url)
         startActivity(intent)

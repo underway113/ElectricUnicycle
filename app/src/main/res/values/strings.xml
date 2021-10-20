@@ -12,7 +12,11 @@
     <string name="about_email">jeremyadam446@gmail.com</string>
     <string name="about_title">My Profile</string>
     <string name="about_source">Source: https://www.euco.us/pages/electric-unicycle-catalog</string>
-    <string name="about_source_link">https://www.euco.us/pages/electric-unicycle-catalog</string>
     <string name="about_disclaimer">The purpose of this app ONLY for submission Dicoding Indonesia project (Belajar Membuat Aplikasi Android untuk Pemula). NOT FOR COMMERCIAL</string>
     <string name="about_build">October 2021</string>
+
+    <string name="about_source_link">https://www.euco.us/pages/electric-unicycle-catalog</string>
+    <string name="about_github_link">https://www.euco.us/pages/electric-unicycle-catalog</string>
+    <string name="about_linkedin_link">https://www.linkedin.com/in/jeradam/</string>
+    <string name="about_tokopedia_link">https://www.tokopedia.com/underway</string>
 </resources>
