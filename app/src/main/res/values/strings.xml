@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Electric Unicycle</string>
+
+    <string name="installment_available">Installment available</string>
+    <string name="installment_unavailable">Installment unavailable</string>
+    <string name="entry_level">Entry Level</string>
+    <string name="high_level">High Powered</string>
+
+    <string name="about_name">Jeremy Adam</string>
+    <string name="about_email">jeremyadam446@gmail.com</string>
+    <string name="about_title">My Profile</string>
+    <string name="about_source">Source: https://www.euco.us/pages/electric-unicycle-catalog</string>
+    <string name="about_disclaimer">The purpose of this app ONLY for submission Dicoding Indonesia project (Belajar Membuat Aplikasi Android untuk Pemula). NOT FOR COMMERCIAL</string>
+    <string name="about_build">October 2021</string>
 </resources>

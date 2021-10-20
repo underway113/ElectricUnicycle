@@ -7,6 +7,7 @@ data class EucModel(
         @DrawableRes val image: Int,
         val brand: String,
         val price: Int,
+        val type: EucTypeEnum,
         val description: String,
         val installmentOption: Boolean,
         val spec: SpecificiationModel

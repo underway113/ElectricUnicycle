@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivItem"
+            android:layout_width="120dp"
+            android:layout_height="116dp"
+            android:src="@drawable/mten3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUC Name"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"/>
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 10.000.000"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"/>
+        <TextView
+            android:id="@+id/tvInstallmentAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/installment_available"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"/>
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entry_level"
+            app:layout_constraintTop_toBottomOf="@+id/tvInstallmentAvailable"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -2,6 +2,7 @@ package com.example.electricunicycle.data
 
 import com.example.electricunicycle.R
 import com.example.electricunicycle.model.EucModel
+import com.example.electricunicycle.model.EucTypeEnum
 import com.example.electricunicycle.model.SpecificiationModel
 
 object DataSource {
@@ -11,6 +12,7 @@ object DataSource {
                     R.drawable.mten3,
                     "Gotway",
                     15403226,
+                    EucTypeEnum.ENTRY,
                     "SMALL BUT (VERY) MIGHTY\nAlthough the MTen3 may be the smallest mass production EUC ever made, that certainly does not mean it's the least powerful.",
                     installmentOption = true,
                     spec = SpecificiationModel(
@@ -29,6 +31,7 @@ object DataSource {
                     R.drawable.v5f,
                     "Inmotion",
                     9899000,
+                    EucTypeEnum.ENTRY,
                     "INMOTION TINY POWERHOUSE\nLike the V8, InMotion V5F (formerly Solowheel Glide 2) is a tried and true model that has been around quite for a few years now, and this entry level electric unicycle offers a great value starting point for many customers looking to learn to ride their first electric unicycle.",
                     installmentOption = false,
                     spec = SpecificiationModel(
@@ -47,6 +50,7 @@ object DataSource {
                     R.drawable.s20,
                     "King Song",
                     45220000,
+                    EucTypeEnum.HIGH,
                     "Units are expected to leave the King Song factory in December 2021",
                     installmentOption = true,
                     spec = SpecificiationModel(
@@ -65,6 +69,7 @@ object DataSource {
                     R.drawable.mten3,
                     "Gotway",
                     15403226,
+                    EucTypeEnum.ENTRY,
                     "SMALL BUT (VERY) MIGHTY\nAlthough the MTen3 may be the smallest mass production EUC ever made, that certainly does not mean it's the least powerful.",
                     installmentOption = true,
                     spec = SpecificiationModel(
@@ -83,6 +88,7 @@ object DataSource {
                     R.drawable.mten3,
                     "Gotway",
                     15403226,
+                    EucTypeEnum.ENTRY,
                     "SMALL BUT (VERY) MIGHTY\nAlthough the MTen3 may be the smallest mass production EUC ever made, that certainly does not mean it's the least powerful.",
                     installmentOption = true,
                     spec = SpecificiationModel(
