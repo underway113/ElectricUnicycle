@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Electric Unicycle</string>
 
-    <string name="installment_available">Installment available</string>
-    <string name="installment_unavailable">Installment unavailable</string>
+    <string name="price_string">Rp %1$s</string>
+    <string name="installment_available">Installment Available</string>
+    <string name="installment_unavailable">Installment Unavailable</string>
     <string name="entry_level">Entry Level</string>
     <string name="high_level">High Powered</string>
 

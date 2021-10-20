@@ -16,43 +16,61 @@
             android:layout_width="120dp"
             android:layout_height="116dp"
             android:src="@drawable/mten3"
+            android:padding="10dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
-        <TextView
-            android:id="@+id/tvName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EUC Name"
-            app:layout_constraintStart_toEndOf="@+id/ivItem"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="8dp"/>
-        <TextView
-            android:id="@+id/tvPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rp 10.000.000"
-            app:layout_constraintStart_toEndOf="@+id/ivItem"
-            app:layout_constraintTop_toBottomOf="@+id/tvName"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="8dp"/>
-        <TextView
-            android:id="@+id/tvInstallmentAvailable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/installment_available"
-            app:layout_constraintTop_toBottomOf="@+id/tvPrice"
-            app:layout_constraintStart_toEndOf="@+id/ivItem"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="8dp"/>
+
         <TextView
             android:id="@+id/tvType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/entry_level"
-            app:layout_constraintTop_toBottomOf="@+id/tvInstallmentAvailable"
-            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginStart="8dp"/>
+            android:text="@string/entry_level"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/type_background_entry"
+            android:paddingVertical="1dp"
+            android:paddingHorizontal="8dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Overline"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="EUC Name"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            app:layout_constraintTop_toBottomOf="@+id/tvType"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Rp 10.000.000"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvInstallmentAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/ic_baseline_toll_24"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center_vertical"
+            android:text="@string/installment_available"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+            app:layout_constraintStart_toEndOf="@+id/ivItem"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
