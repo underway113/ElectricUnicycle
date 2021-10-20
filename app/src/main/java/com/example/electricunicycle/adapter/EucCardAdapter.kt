@@ -9,11 +9,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.electricunicycle.R
 import com.example.electricunicycle.data.DataSource
+import com.example.electricunicycle.model.EucModel
 import com.example.electricunicycle.model.EucTypeEnum
 import java.text.NumberFormat
 
 class EucCardAdapter(
-        private val context: Context
+        private val context: Context,
+        private val onClickListener: OnClickListener
 ): RecyclerView.Adapter<EucCardAdapter.EucCardViewHolder>() {
 
     private val data = DataSource.eucList
@@ -25,6 +27,7 @@ class EucCardAdapter(
         val tvInstallmentAvailable: TextView = view.findViewById(R.id.tvInstallmentAvailable)
         val tvType: TextView = view.findViewById(R.id.tvType)
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EucCardViewHolder {
         var adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
@@ -60,6 +63,14 @@ class EucCardAdapter(
             }
         }
         holder.tvType.setPadding(dpAsPixels(8), dpAsPixels(1), dpAsPixels(8), dpAsPixels(1))
+
+        holder.itemView.setOnClickListener {
+            onClickListener.onClick(item)
+        }
+    }
+
+    class OnClickListener(val listener: (euc: EucModel) -> Unit) {
+        fun onClick(euc: EucModel) = listener(euc)
     }
 
     private fun dpAsPixels(sizeInDp: Int): Int {

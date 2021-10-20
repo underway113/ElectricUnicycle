@@ -2,7 +2,7 @@ package com.example.electricunicycle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import com.example.electricunicycle.adapter.EucCardAdapter
 
@@ -13,7 +13,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val rvMain = findViewById<RecyclerView>(R.id.rvMain)
-        rvMain.adapter = EucCardAdapter(applicationContext)
+        rvMain.adapter = EucCardAdapter(applicationContext, EucCardAdapter.OnClickListener {
+            Log.d("henlo", "Click Item " + it.name)
+        })
+
         rvMain.setHasFixedSize(true)
     }
 }
