@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvImageEuc"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="4dp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/hero"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvNameEuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/about_name"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvImageEuc" />
+
+        <TextView
+            android:id="@+id/tvTypeEuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/type_background_entry"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="1dp"
+            android:text="@string/entry_level"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Overline"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvNameEuc"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameEuc" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginHorizontal="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTypeEuc"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/gray_e4ecf2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_start"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tvPriceEuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_string"
+                android:layout_gravity="center_vertical|end"
+                android:background="@drawable/background_price"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="8dp"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                android:layout_marginEnd="8dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvDescEuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upon further analysis, you could give android:gravity=fill_horizonta a shot. That is described as Grow the horizontal size of the object if needed so it completely fills its container, but I do not know how they  the tex"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvPrice"
+            android:layout_marginTop="18dp"
+            android:layout_marginHorizontal="18dp"/>
+
+        <LinearLayout
+            android:id="@+id/llSpec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvDescEuc"
+            android:layout_marginHorizontal="18dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCapacity"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/battery_capacity"
+                            android:background="@color/gray_e4ecf2"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/gray_849fb3" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/tvBatteryCapacity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                                    android:textStyle="bold"
+                                    android:text="1440" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:textSize="10sp"
+                                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                                    android:textStyle="bold"
+                                    android:text="Wh" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                                android:text="Capacity" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardMaxRange"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/max_range"
+                            android:background="@color/gray_e4ecf2"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/gray_849fb3" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/tvMaxRange"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                                    android:textStyle="bold"
+                                    android:text="1440" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:textSize="10sp"
+                                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                                    android:textStyle="bold"
+                                    android:text="Km" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                                android:text="Max Range" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardMotoPower"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/motor_power"
+                            android:background="@color/gray_e4ecf2"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/gray_849fb3" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/tvMotorPower"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                                    android:textStyle="bold"
+                                    android:text="1440" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:textSize="10sp"
+                                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                                    android:textStyle="bold"
+                                    android:text="W" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                                android:text="Motor Power" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardTopSpeed"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="10dp"
+                    android:elevation="8dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/top_speed"
+                            android:background="@color/gray_e4ecf2"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:scaleType="centerCrop"
+                            app:tint="@color/gray_849fb3" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/tvTopSpeed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                                    android:textStyle="bold"
+                                    android:text="1440" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:textSize="10sp"
+                                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                                    android:textStyle="bold"
+                                    android:text="Km/h" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+                                android:text="Top Speed" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llSpec"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+            android:text="Buy Now"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -19,4 +19,8 @@
     <string name="about_github_link">https://www.euco.us/pages/electric-unicycle-catalog</string>
     <string name="about_linkedin_link">https://www.linkedin.com/in/jeradam/</string>
     <string name="about_tokopedia_link">https://www.tokopedia.com/underway</string>
+
+    <string name="share_info">Share Ke</string>
+
+    <string name="price_start">Price starts from</string>
 </resources>

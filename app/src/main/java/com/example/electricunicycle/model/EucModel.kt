@@ -1,8 +1,9 @@
 package com.example.electricunicycle.model
 
 import androidx.annotation.DrawableRes
+import java.io.Serializable
 
-data class EucModel(
+data class EucModel (
         val name: String,
         @DrawableRes val image: Int,
         val brand: String,
@@ -11,4 +12,4 @@ data class EucModel(
         val description: String,
         val installmentOption: Boolean,
         val spec: SpecificiationModel
-)
+): Serializable

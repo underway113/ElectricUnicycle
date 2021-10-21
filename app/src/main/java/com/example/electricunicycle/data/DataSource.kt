@@ -17,13 +17,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             512,
-                            84,
                             48,
                             37,
                             800,
-                            false,
-                            false,
-                            true
+                            "https://www.euco.us/products/gotway-mten-electric-unicycle"
                     )
             ),
             EucModel(
@@ -36,13 +33,10 @@ object DataSource {
                     installmentOption = false,
                     spec = SpecificiationModel(
                             320,
-                            84,
                             40,
                             24,
                             550,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/inmotion-v5f-electric-unicycle"
                     )
             ),
             EucModel(
@@ -55,13 +49,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             2220,
-                            126,
                             0,
                             70,
                             3300,
-                            false,
-                            false,
-                            true
+                            "https://www.euco.us/products/king-song-s20-eagle-preorder-deposit"
                     )
             ),
             EucModel(
@@ -74,13 +65,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             1110,
-                            84,
                             48,
                             50,
                             2200,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/king-song-s18-electric-unicycle"
                     )
             ),
             EucModel(
@@ -93,13 +81,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             1500,
-                            84,
                             48,
                             55,
                             2200,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/inmotion-v11-electric-unicycle"
                     )
             ),
             EucModel(
@@ -112,13 +97,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             1750,
-                            100,
                             48,
                             46,
                             2500,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/inmotion-v12-electric-unicycle"
                     )
             ),
             EucModel(
@@ -131,13 +113,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             420,
-                            100,
                             32,
                             30,
                             800,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/king-song-ks-14d-electric-unicycle"
                     )
             ),
             EucModel(
@@ -150,13 +129,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             840,
-                            100,
                             64,
                             35,
                             1200,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/king-song-ks-16s-electric-unicycle"
                     )
             ),
             EucModel(
@@ -169,13 +145,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             1554,
-                            84,
                             112,
                             50,
                             2200,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/king-song-16x-electric-unicycle"
                     )
             ),
             EucModel(
@@ -189,12 +162,9 @@ object DataSource {
                     spec = SpecificiationModel(
                             1800,
                             100,
-                            100,
                             60,
                             2800,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/begode-hero-electric-unicycle-preorder-deposit"
                     )
             ),
             EucModel(
@@ -207,13 +177,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             518,
-                            84,
                             40,
                             35,
                             1000,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/inmotion-v8f-electric-unicycle"
                     )
             ),
             EucModel(
@@ -226,13 +193,10 @@ object DataSource {
                     installmentOption = true,
                     spec = SpecificiationModel(
                             1500,
-                            84,
                             96,
                             50,
                             2000,
-                            true,
-                            true,
-                            true
+                            "https://www.euco.us/products/gotway-t3-tesla-v3"
                     )
             )
     )

@@ -39,7 +39,7 @@ class EucCardAdapter(
     override fun onBindViewHolder(holder: EucCardViewHolder, position: Int) {
 
         val item = data[position]
-        val convertPrice =  NumberFormat.getInstance().format(item.price);
+        val convertPrice =  NumberFormat.getInstance().format(item.price)
 
         holder.ivItem.setImageResource(item.image)
         holder.tvName.text = item.name

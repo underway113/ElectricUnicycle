@@ -11,7 +11,6 @@ import com.example.electricunicycle.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -20,7 +19,9 @@ class MainActivity : AppCompatActivity() {
         setTitle(R.string.about_title)
 
         binding.rvMain.adapter = EucCardAdapter(applicationContext, EucCardAdapter.OnClickListener {
-            Log.d("henlo", "Click Item " + it.name)
+            intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra(EXTRA_DETAIL_EUC, it)
+            startActivity(intent)
         })
 
         binding.rvMain.setHasFixedSize(true)
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    public companion object {
+        const val EXTRA_DETAIL_EUC = "detailEuc"
     }
 
 }
