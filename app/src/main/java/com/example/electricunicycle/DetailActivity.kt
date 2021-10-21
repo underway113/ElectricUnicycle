@@ -42,6 +42,7 @@ class DetailActivity : AppCompatActivity() {
         binding.tvTypeEuc.setPadding(dpAsPixels(8), dpAsPixels(1), dpAsPixels(8), dpAsPixels(1))
 
         val convertPrice =  NumberFormat.getInstance().format(detailEuc.price)
+        binding.ivEuc.setImageResource(detailEuc.image)
         binding.tvPriceEuc.text = getString(R.string.price_string, convertPrice)
         binding.tvDescEuc.text = detailEuc.description
 
